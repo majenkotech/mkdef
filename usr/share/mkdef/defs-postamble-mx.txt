@@ -1,0 +1,7 @@
+
+#define _JTAG 0
+
+#endif  // OPT_BOARD_INTERNAL
+
+#endif  // BOARD_DEFS_H
+

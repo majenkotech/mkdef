@@ -1,0 +1,55 @@
+# Chip: pic32mz2048efg064
+# Name: Sound Stick
+
+
+# IO pins
+RB0     PIN_IO0         A0          S0SS3                               OC5             PIN_DSPI0_SS
+RB1     PIN_IO1         A1          INT4
+RB2     PIN_IO2         A2          INT1                                OC9
+RB3     PIN_IO3         A3                                              OC7
+RB4     PIN_IO4         A4          
+
+# LEDs
+RD3                     LED1                                            OC4
+RD2                     LED2                                            OC3
+
+# I2C Bus
+RF4     PIN_SDA         S0SDA5      S0SDI3      S1TX3   S0RX1
+RF5     PIN_SCL         S0SCL5      S0SDO3      S1RX3   S0TX1
+
+# LED bus
+RB14    PIN_DATA        S1SDO4      S0SCK3                              OC2
+
+# Internal I2C
+RD9     PIN_IB_SDA      S1SDA1
+RD10    PIN_IB_SCL      S1SCL1  S1SCK4
+
+# I2S
+RG8     S2SDO2                  PIN_DO
+RE5     S2SDI2                  PIN_MCLK
+RG6     S2SCK2                  PIN_BCLK
+RG9     S2SS2                   PIN_WCLK
+RB5                             PIN_DAC_RESET
+
+# SQI
+RE0     PIN_SQID0
+RE1     PIN_SQID1
+RE2     PIN_SQID2
+RE3     PIN_SQID3
+RF1     PIN_SQICLK
+RD4     PIN_SQCICS
+
+# ADXL345
+RB9     PIN_ADXL_INT1           INT3
+RB8     PIN_ADXL_INT2           INT2
+
+# Misc
+RC15                            PIN_OSCEN
+RB6                             PIN_ICSP_CLK
+RB7                             PIN_ICSP_DAT
+
+# Dummy pins - pins that we don't want to expose outside
+RD11                    S1SDI4
+RB15                    S1SS4
+
+
