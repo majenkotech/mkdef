@@ -6,6 +6,16 @@ This is a rudamentary Perl script for generating board definition files for chip
 It takes a "def" file describing the board and spits out the Board_Data.c and Board_Defs.h files
 corresponding to that definition.
 
+Usage
+-----
+
+Once you have crafted a definition file it is as simple as:
+
+    $ mkdef <def file>
+
+The output files will be created in the current directory.
+
+
 Definition file format
 ----------------------
 
